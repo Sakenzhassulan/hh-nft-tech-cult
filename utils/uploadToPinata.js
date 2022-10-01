@@ -10,7 +10,6 @@ const pinata = pinataSDK(pinataApiKey, pinataApiSecret)
 async function storeImages(imagesFilePath) {
     const fullImagesPath = path.resolve(imagesFilePath)
     const files = fs.readdirSync(fullImagesPath)
-    files.shift()
     console.log(files)
     console.log(fullImagesPath)
     let responses = []
